@@ -1,5 +1,5 @@
-Pillow==10.0.0
-pytesseract==0.3.10
-gradio==3.35.2
+Pillow
+pytesseract
+
 transformers==4.34.0  # Assuming a recent version of Huggingface Transformers
 torch==2.0.1          # Optional, if using transformers with PyTorch backend
