@@ -42,6 +42,6 @@ def create_interface():
     # Launch the interface
     iface.launch(share=True)
 
-# Run the Gradio interface
+# Run the Gradio interfacee
 if __name__ == "__main__":
     create_interface()
