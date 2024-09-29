@@ -5,11 +5,12 @@ import pytesseract
 import gradio as gr
 
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 
 # Function to extract text and search for a keyword
 def ocr_with_search(image, keyword):
     # Extract text using OCR (supports Hindi and English)
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
    
     text = pytesseract.image_to_string(image, lang='hin+eng')
     
