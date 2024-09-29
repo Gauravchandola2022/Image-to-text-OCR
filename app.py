@@ -1,6 +1,6 @@
 import os
 os.environ["GRADIO_ANALYTICS_ENABLED"] = "False"
-from PIL import Image
+from PIL import Image,ImageEnhance,ImageFilter
 import pytesseract
 import gradio as gr
 
@@ -11,6 +11,17 @@ import gradio as gr
 def ocr_with_search(image, keyword):
     # Extract text using OCR (supports Hindi and English)
     pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
+    
+# Convert image to grayscale
+image = image.convert('L')
+
+# Enhance contrast
+enhancer = ImageEnhance.Contrast(image)
+image = enhancer.enhance(2)
+
+# Apply some blurring to smooth the image
+image = image.filter(ImageFilter.MedianFilter())
    
     text = pytesseract.image_to_string(image, lang='hin+eng')
     
