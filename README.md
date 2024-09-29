@@ -12,7 +12,7 @@ short_description: processes the image to extract text using OCR
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-Here's the documentation for Image to Text OCR project based on the structure you provided:
+
 
 ---
 
@@ -45,7 +45,7 @@ The **Image to Text OCR** project is aimed at individuals and organizations that
 The project is currently in active development. A working prototype is deployed for demonstration purposes, but enhancements and optimizations are ongoing.
 
 **Contributing**:  
-At this stage, external contributions are not being accepted. However, we welcome feedback from users and collaborators within the Graphic Era Hill University community for improvements.
+At this stage, external contributions are not being accepted. However, we welcome feedback from users and collaborators for improvements.
 
 ---
 
@@ -63,7 +63,7 @@ Optional (for developers):
 ---
 
 ## Installation
-The **Image to Text OCR** project is web-based and does not require any installation. Once deployed, it will be accessible via a live URL.
+The **Image to Text OCR** project is web-based and does not require any installation. It is accessible via this live URL: https://huggingface.co/spaces/gaurav2004/gradio-imagetotext-OCR.
 
 For developers interested in running it locally, you can follow these steps:
 
@@ -81,7 +81,7 @@ For developers interested in running it locally, you can follow these steps:
 ---
 
 ## License
-Licensing details for this project will be provided upon its release for public use. Currently, the project is under development, and no specific license has been designated.
+apache-2.0
 
 --- 
 
